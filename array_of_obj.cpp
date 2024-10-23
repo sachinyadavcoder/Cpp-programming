@@ -13,16 +13,19 @@ public:
 	    
 	}
 	void get() {
+        cout<<"----------------------------------------------------------------------------------------------------------------------\n";
 		cout<<"Name : "<<Name<<endl;
 		cout<<"price : "<<price<<endl;
 		cout<<"Qty : "<<Qty<<endl;
-	}
+	      
+    }
 };
 int main()
 {
     int size,a;
     float b;
     string c;
+    size=3;
 ShopItem *ptr = new ShopItem[size];
 ShopItem *ptrItem=ptr;
 for(int i=0;i<size;i++){
@@ -37,8 +40,8 @@ for(int i=0;i<size;i++){
     ptr++;
 }
 for(int i=0;i<size;i++){
- ptrItem->get();
- ptrItem++;
+    ptrItem->get();
+    ptrItem++;
     
- }
+    }
 }
